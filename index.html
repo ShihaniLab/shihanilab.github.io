@@ -1825,3 +1825,14 @@ figure{margin:0}
 @keyframes hsin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.scanl{display:none}.labgrid{animation:none;opacity:1}}
 </style>
+<style>
+/* CTA pressed state */
+.btn,.btn2,.btn.sqb .ar{transition:background-color .15s,color .15s,border-color .15s,transform .1s}
+.btn:active,.btn.tap{background:var(--hs-red)!important;color:#fff!important;border-color:var(--hs-red)!important;transform:scale(.98)}
+.btn.sqb:active .ar,.btn.sqb.tap .ar{background:#111!important;color:#fff!important}
+.btn2:active,.btn2.tap{background:var(--hs-red)!important;border-color:var(--hs-red)!important;color:#fff!important;transform:scale(.98)}
+.rfb:active,.rfb.tap{background:#111!important;color:#fff!important}
+.rfb:active .ar,.rfb.tap .ar{background:var(--hs-red)!important}
+.totop:active{background:var(--hs-red)}
+</style>
+<script>document.addEventListener('pointerdown',function(e){var b=e.target.closest&&e.target.closest('.btn,.btn2');if(!b)return;b.classList.add('tap');setTimeout(function(){b.classList.remove('tap')},450)});</script>
