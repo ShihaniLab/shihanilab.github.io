@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Soufiane Shihani · Brand & Digital Growth Strategist</title>
 <meta name="description" content="Brand & digital growth strategist. Understand humans, decode systems, create growth. Book a free 15-minute diagnosis call.">
-<meta property="og:type" content="website"><meta property="og:title" content="Soufiane Shihani · Human Systems"><meta property="og:description" content="Brand & digital growth strategist. Understand humans, decode systems, create growth. Book a free 15-minute diagnosis call."><meta property="og:image" content="https://shihanilab.github.io/og.jpg">
+<meta property="og:type" content="website"><meta property="og:title" content="Soufiane Shihani · Human Systems"><meta property="og:description" content="Brand & digital growth strategist. Understand humans, decode systems, create growth. Book a free 15-minute diagnosis call."><meta property="og:image" content="https://shihanisoufiane.com/og.jpg">
 <meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#1F2A44">
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Cairo:wght@400;600;700&display=swap">
@@ -236,6 +236,7 @@ footer .cp{grid-column:1/-1;border-top:1px solid #3a3a3c;padding-top:18px;font-s
 .draft{position:fixed;inset-inline-end:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));background:var(--ink);color:#fff;font:500 12px var(--sans);border-radius:999px;padding:6px 12px;z-index:9}
 </style>
 
+<a href="#top" class="totop" id="totop" aria-label="Back to top">↑</a>
 <div id="app"></div>
 
 
@@ -399,7 +400,7 @@ document.getElementById('app').innerHTML=`
   <div class="tick" aria-hidden="true"><div class="tk">${(()=>{const c="CASABLANCA · PARIS · BRUSSELS · BARCELONA · AMSTERDAM · DUBAI · MONTREAL · LONDON · ";return c+c+c+c})()}</div></div>
   <div class="h6g"><div class="giant" dir="ltr" aria-label="THE MARKETER"><span class="dcd">THE MARKETER</span><i>.</i></div></div>
   <div class="h6c">
-    <div class="rh"><div class="swp" style="background-image:url(${BW})"></div><span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span><span class="fig hfig" dir="ltr">FIG. 01 — SUBJECT · S. SHIHANI</span><span class="hsn eye" aria-hidden="true"></span></div>
+    <div class="rh"><div class="swp" style="background-image:url(${BW})"></div><span class="labgrid" aria-hidden="true"></span><span class="scanl" aria-hidden="true"></span><span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span><span class="fig hfig" dir="ltr">FIG. 01 — SUBJECT · S. SHIHANI</span><span class="hsn eye" aria-hidden="true"></span></div>
     <div class="h6t">
       <p class="mc"><b>${esc(t.hero.eb)}</b>${esc(t.fullname)}</p>
       <h1 class="mxh">${esc(MX[L].h)}</h1>
@@ -407,10 +408,18 @@ document.getElementById('app').innerHTML=`
         <div class="asr"><b class="a">${MX[L].art}</b><p>${esc(MX[L].artT)}</p></div>
         <div class="asr"><b class="s">${MX[L].sci}</b><p>${esc(MX[L].sciT)}</p></div>
       </div>
-      <div class="mxcta"><a class="btn sqb" href="#call"><span class="ar">→</span><span>${MX[L].cta}</span></a><p class="mc"><b>${esc(t.hero.eb)}</b>${MX[L].fol}</p></div>
+      <div class="mxcta"><div class="ctarow"><a class="btn sqb" href="#call"><span class="ar">→</span><span>${MX[L].cta}</span></a><a class="btn2" href="#work">${L==='ar'?'شاهد أعمالي':'See my work'}<span aria-hidden="true">↓</span></a></div><p class="mc"><b>${esc(t.hero.eb)}</b>${MX[L].fol}</p></div>
     </div>
   </div>
 </header>
+
+
+
+
+<section class="band" id="approach">${head(t.think.eb,t.think.h,t.think.p)}
+  <div class="w tcx">${t.think.items.map(([s,w,q],i)=>`<article class="tcc"><div class="tci" style="${PIMG[i]?`background-image:url(${PIMG[i]})`:''}"><b>0${i+1}</b></div><p class="tcq">${esc(s)}</p><span class="tcl">${t.think.q}</span><p class="tcr">${esc(q)}</p></article>`).join('')}</div>
+  <div class="w tcclose"><p>${esc(t.think.close)}</p><a class="btn" href="#call">${esc(t.think.cta)}</a></div>
+</section>
 
 <section class="obs2" aria-label="${esc(X.obs.a)} ${esc(X.obs.b)} ${esc(X.obs.c)}">
   <div class="sysbg d" style="background-image:url(${HS.deskD})"></div>
@@ -418,12 +427,6 @@ document.getElementById('app').innerHTML=`
   <div class="obst2"><span class="fig">${esc(X.obs.fig)}</span>
     <p class="obsh"><span>${esc(X.obs.a)}</span><span class="g">${esc(X.obs.b)}</span><span class="r">${esc(X.obs.c)}</span></p>
     <p class="obsc2">${esc(X.obs.cap)}</p></div>
-</section>
-
-
-<section class="band" id="approach">${head(t.think.eb,t.think.h,t.think.p)}
-  <div class="w tcx">${t.think.items.map(([s,w,q],i)=>`<article class="tcc"><div class="tci" style="${PIMG[i]?`background-image:url(${PIMG[i]})`:''}"><b>0${i+1}</b></div><p class="tcq">${esc(s)}</p><span class="tcl">${t.think.q}</span><p class="tcr">${esc(q)}</p></article>`).join('')}</div>
-  <div class="w tcclose"><p>${esc(t.think.close)}</p><a class="btn" href="#call">${esc(t.think.cta)}</a></div>
 </section>
 
 <section class="band method-h mbx">${head(t.method.eb,t.method.h,t.method.p)}
@@ -496,7 +499,7 @@ document.getElementById('app').innerHTML=`
     <div class="abt"><p class="eb">${esc(X.about.eb)}</p><h2>${esc(X.about.h)}</h2>
       <p class="lead">${esc(X.about.p1)}</p><p>${esc(X.about.p2)}</p><p>${esc(X.about.p3)}</p>
       <div class="abpr">${X.about.pr.map(([n,a,b])=>`<div><span class="hsn">${n}</span><strong>${esc(a)}</strong><span>${esc(b)}</span></div>`).join('')}</div>
-      <p class="abst"><b dir="ltr">${esc(X.about.stat)}</b><span>${esc(X.about.statl)}</span></p>
+      <p class="abst"><b dir="ltr">${esc(X.about.stat)}</b><span>${esc(X.about.statl)}</span><a class="igl" href="https://www.instagram.com/shihanilabs/" target="_blank" rel="noopener"><bdi dir="ltr">@shihanilabs</bdi> ${L==='ar'?'على إنستغرام':'on Instagram'} <span aria-hidden="true">↗</span></a></p>
       <p class="sig">${SIG_EN}</p>
     </div>
   </div>
@@ -553,7 +556,7 @@ document.querySelectorAll('.pyp .sw2 button').forEach(b=>b.onclick=()=>{const p=
 (function(){const d=document.querySelector('.h6 .dcd'),ph=document.querySelector('.h6 .swp');if(!d)return;
  if(matchMedia('(prefers-reduced-motion: reduce)').matches){ph&&ph.classList.add('scanned');return}
  const W="THE MARKETER",CH="ABCDEFGHIJKLMNOPQRSTUVWXYZ#%&@$";let n=0;
- const iv=setInterval(()=>{n++;d.textContent=W.split('').map((c,k)=>c===' '?' ':(k<n/2?c:CH[Math.random()*CH.length|0])).join('');if(n>W.length*2+2){clearInterval(iv);d.textContent=W}},45);
+ /* decode removed: lab scan instead */
  if(ph){ph.classList.add('scan');setTimeout(()=>ph.classList.add('scanned'),2000)}})();
 syncCC();const ccs=document.getElementById('cc');ccs&&ccs.addEventListener('change',syncCC);
 document.querySelectorAll('.tl .tile input').forEach(r=>r.addEventListener('change',()=>{const a=document.getElementById('tlAfter');a.classList.add('on');setTimeout(()=>a.querySelector('#name').focus({preventScroll:true}),250)}));
@@ -1794,3 +1797,31 @@ figure{margin:0}
 </style>
 <style>@media(min-width:1024px){.steps5 li{display:flex;flex-direction:column;align-items:flex-start;gap:6px}}@media(max-width:1023px){.sysimg4 .img{aspect-ratio:4/3;background-position:72% center}}</style>
 <style>@media(max-width:1023px){.sysimg4 .img{aspect-ratio:1913/822!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat}.sysimg4 figcaption{position:static!important;display:inline-block;margin-top:8px;background:transparent!important;padding:0!important}}</style>
+<style>
+.ctarow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn2{display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 20px;border:1.5px solid #111;color:#111;text-decoration:none;font:700 13px/1 "DM Sans",sans-serif;letter-spacing:.1em;text-transform:uppercase;transition:background .2s,color .2s}
+.btn2:hover{background:#111;color:#fff}
+[dir="rtl"] .btn2{letter-spacing:0;font-family:"Cairo",sans-serif;font-size:15px}
+.abst{flex-wrap:wrap}
+.igl{flex-basis:100%;margin-top:6px;color:var(--hs-navy);font-weight:700;font-size:15px;text-decoration:none;border-bottom:1.5px solid var(--hs-red);align-self:flex-start;width:max-content;padding-bottom:2px}
+.igl:hover{color:var(--hs-red)}
+.totop{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:50;width:48px;height:48px;display:grid;place-items:center;background:var(--hs-navy);color:#fff;font:700 20px/1 "DM Sans",sans-serif;text-decoration:none;box-shadow:0 0 0 2px var(--hs-red) inset;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s}
+.totop.on{opacity:1;transform:none;pointer-events:auto}
+.totop:hover{background:var(--hs-red)}
+[dir="rtl"] .totop{right:auto;left:max(16px,env(safe-area-inset-left,0px))}
+</style>
+<script>(function(){var b=document.getElementById('totop');if(!b)return;b.addEventListener('click',function(e){e.preventDefault();scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})});var f=function(){b.classList.toggle('on',scrollY>innerHeight*0.9)};addEventListener('scroll',f,{passive:true});f()})();</script>
+<style>
+/* hero lab scan */
+.h6 .swp{opacity:1!important;clip-path:none!important;transform:none!important;filter:none!important}
+.labgrid{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(31,42,68,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(31,42,68,.13) 1px,transparent 1px);background-size:28px 28px;opacity:0;animation:hsgrid 1.2s .2s ease-out forwards}
+.h6 .swp{position:relative;z-index:1}
+.scanl{position:absolute;left:0;right:0;top:0;height:2px;z-index:4;background:var(--hs-red);box-shadow:0 0 0 1px rgba(201,39,32,.15),0 6px 18px rgba(201,39,32,.25);pointer-events:none;animation:hsscan 3.2s .6s cubic-bezier(.45,0,.2,1) 1 forwards,hsscan2 7s 4.4s ease-in-out infinite}
+.scanl::after{content:"SCANNING";position:absolute;right:8px;top:6px;font:600 9px/1 "DM Sans",sans-serif;letter-spacing:.18em;color:var(--hs-red)}
+@keyframes hsgrid{to{opacity:1}}
+@keyframes hsscan{0%{top:0;opacity:1}90%{top:100%;opacity:1}100%{top:100%;opacity:0}}
+@keyframes hsscan2{0%,70%{top:0;opacity:0}72%{opacity:.85}96%{top:100%;opacity:.85}100%{top:100%;opacity:0}}
+
+@keyframes hsin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.scanl{display:none}.labgrid{animation:none;opacity:1}}
+</style>
